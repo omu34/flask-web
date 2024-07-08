@@ -1,0 +1,75 @@
+{% extends "layout.html" %} {% block title %}
+<title>Home</title>
+{% endblock %} {% block content %}
+<center>
+    <div class="container my-4 mx-4 p-10">
+        <div class="row custom-alert d-none">
+            <div class="col">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card shadow ">
+                    <div class="container h-100">
+                        <div class="d-flex h-100 text-center align-items-center">
+                            <div class="w-100 text-white ">
+                                <br/>
+                                <a href="{{url_for('views.index')}}">
+                                    <button type="button" class="btn btn-danger btn-lg btn-">
+                                            View student(s)
+                                        </button>
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body h-90">
+                        <header>
+                            <img src='https://media-exp1.licdn.com/dms/image/C4D22AQGzebpILsqeaA/feedshare-shrink_800/0/1630224419505?e=1660176000&amp;v=beta&amp;t=20Sm7x16CceqNdDZSdCPocImpAh6FsgyTl_2gwXRc2k' alt='image' id='ember660' class='ember-view feed-shared-image-viewer__image'>
+
+
+
+                        </header>
+                    </div>
+                    <div class="container h-50">
+                        <div class="d-flex h-100 text-center align-items-center">
+                            <div class="w-100 text-white">
+                                <a href="https://facebook.com/Bernard.Emoyo">
+                                    <img src="static/icon/fb.png" alt="f">
+                                </a>
+                                <a href="https://instagram.com/bernardreagan9">
+                                    <img src="static/icon/instagram.png" alt="i">
+                                </a>
+                                <a href="https://twitter.com/@bernard_omuse5">
+                                    <img src="static/icon/twitter.png" alt="t">
+                                </a>
+                                <a href="https://linkedin.com/in/bernard-rygss-8a25121b3/">
+                                    <img src="static/icon/linkedin.png" alt="l">
+                                </a>
+                                <a href="https://whatsapp.com/bernard omuse/">
+                                    <img src="static/icon/w.png" alt="w">
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCbesexIo3y48NPqPFfyZVsQ/">
+                                    <img src="static/icon/utub.png" alt="u">
+                                </a>
+                            </div>
+                        </div>
+                        <b style="color:green;">for help click above icon</b>
+                    </div>
+                    <section class="my-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5 mx-auto">
+                                    <div id="footer">Created by
+                                        <a href="https://ideal-angelic-call.anvil.app" title="Bern">Bern</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <center>
+            {% endblock %}
