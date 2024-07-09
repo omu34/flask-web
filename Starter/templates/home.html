@@ -13,11 +13,11 @@
                     <div class="container h-100">
                         <div class="d-flex h-100 text-center align-items-center">
                             <div class="w-100 text-white ">
-                                <br/>
+                                <br />
                                 <a href="{{url_for('views.index')}}">
                                     <button type="button" class="btn btn-danger btn-lg btn-">
-                                            View student(s)
-                                        </button>
+                                        Student(s)
+                                    </button>
                                 </a>
 
 
@@ -26,9 +26,72 @@
                     </div>
                     <div class="card-body h-90">
                         <header>
-                            <img src='https://media-exp1.licdn.com/dms/image/C4D22AQGzebpILsqeaA/feedshare-shrink_800/0/1630224419505?e=1660176000&amp;v=beta&amp;t=20Sm7x16CceqNdDZSdCPocImpAh6FsgyTl_2gwXRc2k' alt='image' id='ember660' class='ember-view feed-shared-image-viewer__image'>
 
+                            <div id="carouselVideoExample" data-mdb-carousel-init class="carousel slide carousel-fade" data-mdb-ride="carousel">
+                                <!-- Indicators -->
+                                <div class="carousel-indicators">
+                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
 
+                                <!-- Inner -->
+                                <div class="carousel-inner">
+                                    <!-- Single item -->
+                                    <div class="carousel-item active">
+                                        <video class="img-fluid" autoplay loop muted>
+                                            <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Home And Slide App</h5>
+                                            <p>
+                                                Beach of carribean Habitat
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single item -->
+                                    <div class="carousel-item">
+                                        <video class="img-fluid" autoplay loop muted>
+                                            <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Home And Slide App</h5>
+                                            <p>
+                                                Beach of Monsoon
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Single item -->
+                                    <div class="carousel-item">
+                                        <video class="img-fluid" autoplay loop muted>
+                                            <source src="https://mdbcdn.b-cdn.net/img/video/Agua-natural.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Home And Slide App</h5>
+                                            <p>
+                                                Beach of Comodos Habitat
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Inner -->
+
+                                <!-- Controls -->
+                                <button data-mdb-button-init class="carousel-control-prev" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button data-mdb-button-init class="carousel-control-next" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <!-- Carousel wrapper -->
 
                         </header>
                     </div>

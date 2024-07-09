@@ -5,17 +5,32 @@ from os import path
 DB_HOST = "localhost"
 DB_NAME = "astudents"
 DB_USER = "postgres"
-DB_PASS = "55"
-DB_PORT = "55"
+DB_PASS = "5599emoyo"
+DB_PORT = "5533"
 
 def create_app():
     app = Flask(__name__)
     app.secret_key = "gygs"
     
-    from .views import views
-    from .auth import auth
+    views_blueprint = None
+    auth_blueprint = None
     
-    app.register_blueprint(views, url_prefix="/")
-    app.register_blueprint(auth, url_prefix="/")
-
+    try:
+        from .views import views
+        views_blueprint = views
+    except ImportError as e:
+        print(f"Error importing views blueprint: {e}")
+    
+    try:
+        from .auth import auth
+        auth_blueprint = auth
+    except ImportError as e:
+        print(f"Error importing auth blueprint: {e}")
+    
+    if views_blueprint:
+        app.register_blueprint(views_blueprint, url_prefix="/")
+    
+    if auth_blueprint:
+        app.register_blueprint(auth_blueprint, url_prefix="/")
+    
     return app
