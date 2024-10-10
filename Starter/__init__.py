@@ -3,10 +3,10 @@ import psycopg2.extras
 from os import path
 
 DB_HOST = "localhost"
-DB_NAME = "astudents"
+DB_NAME = "socketio"
 DB_USER = "postgres"
-DB_PASS = "5599emoyo"
-DB_PORT = "5533"
+DB_PASS = "5599"
+DB_PORT = "5432"
 
 def create_app():
     app = Flask(__name__)

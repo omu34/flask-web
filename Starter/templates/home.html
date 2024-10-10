@@ -1,6 +1,8 @@
-{% extends "layout.html" %} {% block title %}
+{% extends "layout.html" %}
+{% block head %}
 <title>Home</title>
-{% endblock %} {% block content %}
+{% endblock %}
+{% block content %}
 <center>
     <div class="container my-4 mx-4 p-10">
         <div class="row custom-alert d-none">
@@ -27,12 +29,17 @@
                     <div class="card-body h-90">
                         <header>
 
-                            <div id="carouselVideoExample" data-mdb-carousel-init class="carousel slide carousel-fade" data-mdb-ride="carousel">
+                            <div id="carouselVideoExample" data-mdb-carousel-init class="carousel slide carousel-fade"
+                                data-mdb-ride="carousel">
                                 <!-- Indicators -->
                                 <div class="carousel-indicators">
-                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
-                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample"
+                                        data-mdb-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample"
+                                        data-mdb-slide-to="1" aria-label="Slide 2"></button>
+                                    <button data-mdb-button-init type="button" data-mdb-target="#carouselVideoExample"
+                                        data-mdb-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
 
                                 <!-- Inner -->
@@ -82,11 +89,13 @@
                                 <!-- Inner -->
 
                                 <!-- Controls -->
-                                <button data-mdb-button-init class="carousel-control-prev" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="prev">
+                                <button data-mdb-button-init class="carousel-control-prev" type="button"
+                                    data-mdb-target="#carouselVideoExample" data-mdb-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button data-mdb-button-init class="carousel-control-next" type="button" data-mdb-target="#carouselVideoExample" data-mdb-slide="next">
+                                <button data-mdb-button-init class="carousel-control-next" type="button"
+                                    data-mdb-target="#carouselVideoExample" data-mdb-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>

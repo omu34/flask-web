@@ -5,16 +5,17 @@ views = Blueprint("views", __name__)
 
 
 def get_db_connection():
-    conn_str = "host=127.0.0.1 dbname=astudents user=postgres password=5599emoyo port=5533"
+    conn_str = "host=127.0.0.1 dbname=socketio user=postgres password=5599 port=5432"
     conn = psycopg2.connect(conn_str)
     return conn
 
 
 @views.route("/")
 def home():
-    if "loggedin" in session:
-        return render_template("home.html", username=session["username"])
-    return redirect(url_for("auth.login"))
+    # if "loggedin" in session:
+        return render_template("home.html")
+    # , username=session["username"])
+    # return redirect(url_for("auth.login"))
 
 
 @views.route("/index")
